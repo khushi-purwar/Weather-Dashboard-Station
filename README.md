@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Weather App ✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple weather application built with React and Vite. It allows users to search for a city and get the current weather conditions for that location.
 
-## Available Scripts
+![image](https://github.com/khushi-purwar/Weather-Dashboard-Station/assets/52875298/bcb00cf9-7ec7-4969-82b1-02168fbab3eb)
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Search for weather information by city name or ZIP code
+* View current weather information, including temperature, humidity, wind speed, and more
+* View a 10-day forecast for the selected location
+* View a map of the selected location using Leaflet
+* View chart of probability of precipitation over the next 6 hours using Chart.js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Dependencies
 
-### `npm test`
+This project uses the following dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Front-end 🎨
+* tailwind CSS - A utility-first CSS framework packed with classes.
+* headlessui/react - A set of completely unstyled, fully accessible UI components for React.
+* react-redux - A package that provides bindings for React to use Redux.
+* reduxjs/toolkit - A package that provides utilities to simplify common Redux use cases, including store setup, creating reducers and actions, and creating middleware.
+* react-router-dom - A package that provides DOM bindings for React Router.
+* axios - A Promise-based HTTP client for the browser.
+* chart.js - A simple yet flexible JavaScript charting library that allows you to create a wide range of chart types.
+* classnames - A JavaScript utility for conditionally joining classNames together.
+* react-icons - A set of free icons for React projects.
+* heroicons/react - A set of free icons for React projects.
+* use-places-autocomplete - A React hook for implementing Google Places Autocomplete in application.
+* leaflet - A JavaScript library for mobile-friendly interactive maps.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To use this application, simply enter the name of a city in the search bar and press the "Enter" key. The current weather conditions for that city will be displayed.
