@@ -11,7 +11,7 @@ const Forecast = lazy(() => import("./routes/Forecast"));
 
 const router = createBrowserRouter([
   {
-    path: "/weather-app-vite",
+    path: "/weather-app",
     element: (
       <Suspense fallback={<div className="hidden">Loading...</div>}>
         <App />

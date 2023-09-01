@@ -4,9 +4,11 @@ import { saveGeoCode } from "../../features/geolocation/geolocationSlice";
 import { useDispatch } from "react-redux";
 import City from "./City";
 import { saveLocation } from "../../features/search/searchSlice";
+import { useState } from "react";
 
 function OtherCities() {
   const dispatch = useDispatch();
+  const {data, setData} = useState([]);
 
   const cities = [
     {
@@ -31,19 +33,13 @@ function OtherCities() {
     },
   ];
 
-  // const data = cities.map((city) => {
-  //   const { data, isSuccess } = useGetCurrentWeatherQuery({
-  //     lat: city.geolocation.lat,
-  //     lng: city.geolocation.lng,
-  //   });
-  //   return { data, isSuccess };
-  // });
-
   function Data({city}) {
     const { data, isSuccess } = useGetCurrentWeatherQuery({
       lat: city.geolocation.lat,
       lng: city.geolocation.lng,
     });
+
+    setData(data);
     return { data, isSuccess };
   }
 
@@ -65,7 +61,7 @@ function OtherCities() {
   return (
     <div className="flex flex-col gap-4">
       <div className="text-lg font-semibold">Other large cities</div>
-      {Data.map((item, i) => (
+      {data.map((item, i) => (
         <div key={i} onClick={() => handleClick(item)}>
           <City
             city={cities[i].city}
